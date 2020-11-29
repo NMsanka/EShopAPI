@@ -1,0 +1,21 @@
+2020-02-06 16:19:06,810 [5] ERROR - 
+Exception: 
+Message: BuildingFootPrint
+StackTrace:    at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at CommercePromote.Data.Repositories.DeveloperRepository.GetProjectUnits(Int32 projectMasterId, Int32 projectBlockId) in D:\CP\CommercePromote.API\CommercePromote\CommercePromote.DataAccess\Repositories\DeveloperRepository.cs:line 1313
+   at CommercePromote.Logic.Developer.DeveloperLogic.GetBlocksList(GetBlocksListRequest request) in D:\CP\CommercePromote.API\CommercePromote\CommercePromote.Logic\Developer\DeveloperLogic.cs:line 1997
+   at CommercePromote.API.Services.DeveloperController.GetBlocksList(GetBlocksListRequest request) in D:\CP\CommercePromote.API\CommercePromote\CommercePromote.API\Services\DeveloperController.cs:line 1951.
+
+ 2020-02-06 16:22:06,957 [6] ERROR - 
+Exception: 
+Message: Input string was not in a correct format.
+StackTrace:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at CommercePromote.Data.Repositories.DeveloperRepository.GetProjectUnits(Int32 projectMasterId, Int32 projectBlockId) in D:\CP\CommercePromote.API\CommercePromote\CommercePromote.DataAccess\Repositories\DeveloperRepository.cs:line 1313
+   at CommercePromote.Logic.Developer.DeveloperLogic.GetBlocksList(GetBlocksListRequest request) in D:\CP\CommercePromote.API\CommercePromote\CommercePromote.Logic\Developer\DeveloperLogic.cs:line 1997
+   at CommercePromote.API.Services.DeveloperController.GetBlocksList(GetBlocksListRequest request) in D:\CP\CommercePromote.API\CommercePromote\CommercePromote.API\Services\DeveloperController.cs:line 1951.
+
+ 
