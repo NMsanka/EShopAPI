@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Schema/SqlStructureValidator.xsd">
+
+  <Query id="Login">
+    <Generic commandType="Text">
+      select * from users where UserName = @uname and Password = @pword;
+    </Generic>
+    <SqlServer commandType="Text">
+    </SqlServer>
+    <Oracle commandType="Text">
+    </Oracle>
+  </Query>
+</root>
